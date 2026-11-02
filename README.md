@@ -1,4 +1,4 @@
-# robustness_shift_counterexample_search_0778ff3c
+# online_distribution_drift_counterexample_search
 
 （语音场景）线上分布漂移的检测的成立条件能否被写成可检验的阈值？用分布漂移检测区分「还能用」与「已经不可信」。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python robustness_shift_counterexample_search_0778ff3c.py --help
-python robustness_shift_counterexample_search_0778ff3c.py --input sample.txt
-python robustness_shift_counterexample_search_0778ff3c.py --input sample.txt --json
+python online_distribution_drift_counterexample_search.py --help
+python online_distribution_drift_counterexample_search.py --input sample.txt
+python online_distribution_drift_counterexample_search.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「反例搜索」使用分隔符 `（无）` 区分标签与载荷。
@@ -50,7 +50,7 @@ python robustness_shift_counterexample_search_0778ff3c.py --input sample.txt --j
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python robustness_shift_counterexample_search_0778ff3c.py --input sample.txt --json`；
+2. 运行 `python online_distribution_drift_counterexample_search.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
